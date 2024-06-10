@@ -18,14 +18,14 @@ export function LandingPage() {
                             <li>Select one mentor and Add multiple Student</li>
                             <li>A student who has a mentor should not be shown in List</li>
                             <ul className="list-disc list-inside ">
-                                <li>Transaction - AssignMentor-Single</li>
+                                <li>Transaction - AssignMentor-Multiple</li>
                             </ul>
                         </ul>
                     </li>
                     <li>API to Assign or Change Mentor for particular Student
                         <ul className="list-disc list-inside  ">
                             <li>Select One Student and Assign one Mentor
-                                <ul className="list-disc list-inside "><li>Transaction - AssignMentor-Multiple</li></ul>
+                                <ul className="list-disc list-inside "><li>Transaction - AssignMentor-Single</li></ul>
                             </li>
                         </ul>
                     </li>
