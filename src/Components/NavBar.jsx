@@ -68,9 +68,9 @@ export function NavBar() {
                         </li>
                     </ul>
                 </div>
-                <div className="navbar-end">
+                {/* <div className="navbar-end">
                     <button className="px-2 py-1 rounded-lg border-2 border-slate-400 text-blue" onClick={() => {location.reload()}}>Refresh Page</button>
-                </div>
+                </div> */}
             </div>
         </>
     )
