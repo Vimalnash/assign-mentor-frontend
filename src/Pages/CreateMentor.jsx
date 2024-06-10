@@ -34,7 +34,7 @@ export function CreateMentor() {
     });
 
     function addMentor(newMentorData) {
-        console.log(newMentorData);
+        // console.log(newMentorData);
         fetch(`${baseurl}/${mentorurl}/create`, {
             method: "POST",
             body: JSON.stringify(newMentorData),
@@ -45,11 +45,11 @@ export function CreateMentor() {
         .then((res) => res.json())
         .then((addedData) => {
             if (addedData.error) {
-                console.log(addedData)
+                // console.log(addedData)
                 setFailureMessage(addedData.error);
                 setSuccessMessage("");
             } else {
-                console.log(addedData);
+                // console.log(addedData);
                 setAllMentorData([...allMentorData, addedData.data])
                 setSuccessMessage(addedData.message);
                 setFailureMessage("");

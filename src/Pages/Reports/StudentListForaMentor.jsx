@@ -10,7 +10,8 @@ export function StudentListForaMentor() {
 
     const [filteredMentorId, setFilteredMentorId] = useState("");
     const [filteredMentor, setFilteredMentor] = useState();
-    const [studentListForMentor, setStudentListForMentor] = useState([]);
+    const [studentListForMentor, setStudentListForMentor] = useState([])
+    ;
     const [errorMessage, setErrorMessage] = useState();
 
     function getStudentListforMentor(filteredMentorId) {
@@ -21,7 +22,7 @@ export function StudentListForaMentor() {
         })
         .then((res) => res.json())
         .then((data) => {
-            console.log(data);
+            // console.log(data);
             if(data.error) {
                 setErrorMessage(data.error);
                 setStudentListForMentor([]);

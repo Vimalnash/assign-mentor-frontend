@@ -34,7 +34,7 @@ export function CreateStudent() {
     });
 
     function addStudent(newStudentData) {
-        console.log(newStudentData);
+        // console.log(newStudentData);
         fetch(`${baseurl}/${studenturl}/create`, {
             method: "POST",
             body: JSON.stringify(newStudentData),
@@ -45,11 +45,11 @@ export function CreateStudent() {
         .then((res) => res.json())
         .then((addedData) => {
             if (addedData.error) {
-                console.log(addedData)
+                // console.log(addedData)
                 setFailureMessage(addedData.error);
                 setSuccessMessage("");
             } else {
-                console.log(addedData);
+                // console.log(addedData);
                 setSuccessMessage(addedData.message);
                 setFailureMessage("");
                 setAllStudentData([...allStudentData, addedData.data])

@@ -29,7 +29,7 @@ export function AssignMentorSingle() {
         })
         .then((res) => res.json())
         .then((data) => {
-            console.log(data);
+            // console.log(data);
             if (data.error) {
                 setFailureMessage(data.error);
                 setSuccessMessage("");
